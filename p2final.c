@@ -44,6 +44,7 @@ int main()
  /* x=input_radius();
   y=input_heigth();
   z=input_length();*/
+  
   input_camel_details(&x,&y,&z);
   res=find_weight(x,y,z);
   output(x,y,z,res);
