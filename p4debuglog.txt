@@ -1,0 +1,45 @@
+(gdb) b main
+Breakpoint 1 at 0x910: file p4final.c, line 50.
+(gdb) r
+Starting program: /home/runner/pps-test2/a.out 
+warning: Error disabling address space randomization: Operation not permitted
+
+Breakpoint 1, main () at p4final.c:50
+50    r=input();
+(gdb) n
+Enter the radius ,length and height of camel 
+2
+4
+1
+52    result=check(r);
+(gdb) s
+check (c=...) at p4final.c:18
+18    x=c.radius;
+(gdb) n
+19    y=c.length;
+(gdb) n
+20    z=c.height;
+(gdb) n
+21    if(x<z && x<y)
+(gdb) n
+23    else if(z<y && z<x)
+(gdb) n
+24      return 1;
+(gdb) n
+29  }
+(gdb) n
+main () at p4final.c:53
+53    output(r,result);
+(gdb) s
+output (c=..., result=1) at p4final.c:32
+32    if(result==-1)
+(gdb) n
+36    else if(result==1)
+(gdb) n
+37      printf("Camel is Happy \n");
+(gdb) n
+Camel is Happy 
+46  }
+(gdb) n
+main () at p4final.c:54
+54    return 0;
