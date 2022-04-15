@@ -23,6 +23,7 @@ float input_length()
 }
 /*void input_camel_details(float *radius, float *height, float *length)
 {
+
   printf("Enter the stomach radius , height,length of camel \n");
   scanf("%f %f %f",radius,height,length);
 }*/
