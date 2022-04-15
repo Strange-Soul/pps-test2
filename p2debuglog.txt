@@ -1,0 +1,45 @@
+(gdb) b main
+Breakpoint 1 at 0x90f: file p2final.c, line 42.
+(gdb) r
+Starting program: /home/runner/pps-test2/a.out 
+warning: Error disabling address space randomization: Operation not permitted
+
+Breakpoint 1, main () at p2final.c:42
+42  {
+(gdb) n
+47    input_camel_details(&x,&y,&z);
+(gdb) s
+input_camel_details (radius=0x7ffd8750e898, height=0x7ffd8750e89c, 
+    length=0x7ffd8750e8a0) at p2final.c:26
+26    printf("Enter the stomach radius , height,length of camel \n");
+(gdb) n
+Enter the stomach radius , height,length of camel 
+27    scanf("%f %f %f",radius,height,length);
+(gdb) n
+2
+2
+2
+28  }
+(gdb) n
+main () at p2final.c:48
+48    res=find_weight(x,y,z);
+(gdb) s
+find_weight (radius=2, height=2, length=2) at p2final.c:33
+33    w=3.14*(pow(radius,3))*(sqrt(height*length));
+(gdb) n
+34    return w;
+(gdb) n
+35  }
+(gdb) n
+main () at p2final.c:49
+49    output(x,y,z,res);
+(gdb) s
+output (radius=2, height=2, length=2, weight=50.2400017) at p2final.c:39
+39    printf("Weight of camel having radius=%.3f, height=%.3f, and length=%.3f\n is %2.f \n",radius,height,length,weight);
+(gdb) n
+Weight of camel having radius=2.000, height=2.000, and length=2.000
+ is 50 
+40  }
+(gdb) n
+main () at p2final.c:50
+50    return 0;
