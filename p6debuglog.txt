@@ -1,0 +1,294 @@
+(gdb) b main
+Breakpoint 1 at 0x95c: file p6final.c, line 45.
+(gdb) r
+Starting program: /home/runner/pps-test2/a.out 
+warning: Error disabling address space randomization: Operation not permitted
+n
+
+Breakpoint 1, main () at p6final.c:45
+45  {
+(gdb) n
+46    int x=input();
+(gdb) s
+input () at p6final.c:4
+4   {
+(gdb) n
+6     printf("Enter the  size of array \n");
+(gdb) n
+Enter the  size of array 
+7     scanf("%d",&n);
+(gdb) n
+10
+8     return n;
+(gdb) n
+9   }
+(gdb) n
+main () at p6final.c:47
+47    int p[x];
+(gdb) n
+48    input_n(x,p);
+(gdb) s
+input_n (n=10, a=0x7ffc1dce7ac0) at p6final.c:11
+11  { printf("Enter the array elements \n");
+(gdb) n
+Enter the array elements 
+12   for(int i=0;i<n;i++)
+(gdb) n
+14       printf("Enter the '%d' element \n",i);
+(gdb) n
+Enter the '0' element 
+15       scanf("%d",&a[i]);
+(gdb) n
+1
+12   for(int i=0;i<n;i++)
+(gdb) 2
+Undefined command: "2".  Try "help".
+(gdb) 3
+Undefined command: "3".  Try "help".
+(gdb) 4
+Undefined command: "4".  Try "help".
+(gdb) 5
+Undefined command: "5".  Try "help".
+(gdb) n
+14       printf("Enter the '%d' element \n",i);
+(gdb) n
+Enter the '1' element 
+15       scanf("%d",&a[i]);
+(gdb) n
+2
+12   for(int i=0;i<n;i++)
+(gdb) 
+14       printf("Enter the '%d' element \n",i);
+(gdb) 
+Enter the '2' element 
+15       scanf("%d",&a[i]);
+(gdb) 
+3
+12   for(int i=0;i<n;i++)
+(gdb) 
+14       printf("Enter the '%d' element \n",i);
+(gdb) 
+Enter the '3' element 
+15       scanf("%d",&a[i]);
+(gdb) 
+4
+12   for(int i=0;i<n;i++)
+(gdb) 
+14       printf("Enter the '%d' element \n",i);
+(gdb) 
+Enter the '4' element 
+15       scanf("%d",&a[i]);
+(gdb) 
+5
+12   for(int i=0;i<n;i++)
+(gdb) 
+14       printf("Enter the '%d' element \n",i);
+(gdb) 
+Enter the '5' element 
+15       scanf("%d",&a[i]);
+(gdb) 
+6
+12   for(int i=0;i<n;i++)
+(gdb) 
+14       printf("Enter the '%d' element \n",i);
+(gdb) 
+Enter the '6' element 
+15       scanf("%d",&a[i]);
+(gdb) 
+7
+12   for(int i=0;i<n;i++)
+(gdb) 
+14       printf("Enter the '%d' element \n",i);
+(gdb) 
+Enter the '7' element 
+15       scanf("%d",&a[i]);
+(gdb) 
+8
+12   for(int i=0;i<n;i++)
+(gdb) 
+14       printf("Enter the '%d' element \n",i);
+(gdb) 
+Enter the '8' element 
+15       scanf("%d",&a[i]);
+(gdb) 
+9
+12   for(int i=0;i<n;i++)
+(gdb) 
+14       printf("Enter the '%d' element \n",i);
+(gdb) 
+Enter the '9' element 
+15       scanf("%d",&a[i]);
+(gdb) 
+10
+12   for(int i=0;i<n;i++)
+(gdb) 
+17  }
+(gdb) 
+main () at p6final.c:49
+49    float res=odd_average(x,p);
+(gdb) s
+odd_average (n=10, a=0x7ffc1dce7ac0) at p6final.c:20
+20    float sum=0;
+(gdb) 
+21    int k=0,j=0;
+(gdb) 
+22    for(int i=0;i<n;i++)
+(gdb) 
+24        if(a[i]%2!= 0)
+(gdb) 
+26          k=k+1;
+(gdb) 
+27          j=j+a[i];
+(gdb) 
+22    for(int i=0;i<n;i++)
+(gdb) 
+24        if(a[i]%2!= 0)
+(gdb) n
+22    for(int i=0;i<n;i++)
+(gdb) n
+24        if(a[i]%2!= 0)
+(gdb) n
+26          k=k+1;
+(gdb) p *a@i
+$1 = {1, 2}
+(gdb) n
+27          j=j+a[i];
+(gdb) n
+22    for(int i=0;i<n;i++)
+(gdb) 
+24        if(a[i]%2!= 0)
+(gdb) 
+22    for(int i=0;i<n;i++)
+(gdb) 
+24        if(a[i]%2!= 0)
+(gdb) 
+26          k=k+1;
+(gdb) 
+27          j=j+a[i];
+(gdb) 
+22    for(int i=0;i<n;i++)
+(gdb) 
+24        if(a[i]%2!= 0)
+(gdb) 
+22    for(int i=0;i<n;i++)
+(gdb) p 
+$2 = {1, 2}
+(gdb) p j
+$3 = 9
+(gdb)  p k
+$4 = 3
+(gdb) p sum
+$5 = 0
+(gdb) n
+24        if(a[i]%2!= 0)
+(gdb) 
+26          k=k+1;
+(gdb) 
+27          j=j+a[i];
+(gdb) 
+22    for(int i=0;i<n;i++)
+(gdb) 
+24        if(a[i]%2!= 0)
+(gdb) 
+22    for(int i=0;i<n;i++)
+(gdb) 
+24        if(a[i]%2!= 0)
+(gdb) 
+26          k=k+1;
+(gdb) 
+27          j=j+a[i];
+(gdb) 
+22    for(int i=0;i<n;i++)
+(gdb) 
+24        if(a[i]%2!= 0)
+(gdb) 
+22    for(int i=0;i<n;i++)
+(gdb) 
+30    sum=j/k;
+(gdb) 
+31    return sum;
+(gdb) 
+32  }
+(gdb) 
+main () at p6final.c:50
+50    output(x,p,res);
+(gdb) s
+output (n=10, a=0x7ffc1dce7ac0, result=5) at p6final.c:34
+34  { printf("Average of odd numbers as fallows \n");
+(gdb) n
+Average of odd numbers as fallows 
+35    for(int i=0;i<n;i++)
+(gdb) n
+37        if(a[i]%2!=0)
+(gdb) n
+38          printf("%d +\n",a[i]);
+(gdb) n
+1 +
+35    for(int i=0;i<n;i++)
+(gdb) n
+37        if(a[i]%2!=0)
+(gdb) p *a@i
+$6 = {1}
+(gdb) n
+35    for(int i=0;i<n;i++)
+(gdb) 
+37        if(a[i]%2!=0)
+(gdb) 
+38          printf("%d +\n",a[i]);
+(gdb) 
+3 +
+35    for(int i=0;i<n;i++)
+(gdb) 
+37        if(a[i]%2!=0)
+(gdb) 
+35    for(int i=0;i<n;i++)
+(gdb) 
+37        if(a[i]%2!=0)
+(gdb) 
+38          printf("%d +\n",a[i]);
+(gdb) p *a@i
+$7 = {1, 2, 3, 4}
+(gdb) n
+5 +
+35    for(int i=0;i<n;i++)
+(gdb) n
+37        if(a[i]%2!=0)
+(gdb) p i
+$8 = 5
+(gdb) p *a@i
+$9 = {1, 2, 3, 4, 5}
+(gdb) n
+35    for(int i=0;i<n;i++)
+(gdb) n
+37        if(a[i]%2!=0)
+(gdb) n
+38          printf("%d +\n",a[i]);
+(gdb) n
+7 +
+35    for(int i=0;i<n;i++)
+(gdb) n
+37        if(a[i]%2!=0)
+
+(gdb) n
+35    for(int i=0;i<n;i++)
+(gdb) 
+37        if(a[i]%2!=0)
+(gdb) 
+38          printf("%d +\n",a[i]);
+(gdb) 
+9 +
+35    for(int i=0;i<n;i++)
+(gdb) 
+37        if(a[i]%2!=0)
+(gdb) 
+35    for(int i=0;i<n;i++)
+(gdb) 
+42    printf("Average of odd numbers is %f \n",result);
+
+
+(gdb) n
+Average of odd numbers is 5.000000 
+43  }
+(gdb) 
+main () at p6final.c:51
+51    return 0;
