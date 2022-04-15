@@ -1,0 +1,45 @@
+(gdb) b main
+Breakpoint 1 at 0x954: file p3final.c, line 24.
+(gdb) r
+Starting program: /home/runner/pps-test2/a.out 
+warning: Error disabling address space randomization: Operation not permitted
+
+Breakpoint 1, main () at p3final.c:24
+24  {
+(gdb) n
+26    z=input();
+(gdb) s
+input () at p3final.c:9
+9   {
+(gdb) n
+11    printf("Enter the details of camel \n");
+(gdb) n
+Enter the details of camel 
+12    scanf("%f %f %f",&c.radius,&c.height,&c.length);
+(gdb) n
+2
+4
+5
+13    return c;
+(gdb) n
+14  }
+(gdb) n
+main () at p3final.c:27
+27    find_weight(&z);
+(gdb) s
+find_weight (c=0x7ffe809b5710) at p3final.c:17
+17    (*c).weight= 3.14 *pow(c->radius,3)* sqrt((c->height) *(c->length));
+(gdb) n
+18  }
+(gdb) n
+main () at p3final.c:28
+28    output(z);
+(gdb) s
+output (c=...) at p3final.c:21
+21    printf("Weight of camel is %.4f \n",c.weight);
+(gdb) n
+Weight of camel is 112.3401 
+22  }
+(gdb) n
+main () at p3final.c:29
+29    return 0;

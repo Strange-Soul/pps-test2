@@ -41,7 +41,7 @@ void output(float radius, float height, float length, float weight)
 int main()
 {
   float x,y,z,res;
-  x=input_radius();
+ /* x=input_radius();
   y=input_heigth();
   z=input_length();
   //input_camel_details(&x,&y,&z);
